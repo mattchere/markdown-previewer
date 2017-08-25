@@ -1,0 +1,14 @@
+.box {
+  border: 1px solid black;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  min-height: 500px;
+  margin: 2%;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  width: 40%;
+}
+p {
+  margin: 0;
+}
