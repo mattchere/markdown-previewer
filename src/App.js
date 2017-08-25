@@ -1,18 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './stylesheets/App.css';
+import MarkdownTextBox from './components/MarkdownTextBox';
+import MarkdownPreview from './components/MarkdownPreview';
+import marked from 'marked';
+
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ""
+    }
+    this.changeText = this.changeText.bind(this);
+  }
+
+  changeText(text) {
+    this.setState({
+      text: marked(text)
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Markdown Previewer</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <MarkdownTextBox changeText={this.changeText} />
+        <MarkdownPreview markdown={this.state.text} />
       </div>
     );
   }
