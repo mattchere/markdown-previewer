@@ -12,9 +12,13 @@ class MarkdownTextBox extends Component {
     this.props.changeText(text);
   }
 
+  componentWillMount() {
+    this.props.changeText(this.props.placeholder);
+  }
+
   render() {
     return (
-      <textarea className="box" onChange={this.handleChange} />
+      <textarea className="box" onChange={this.handleChange}>{this.props.placeholder}</textarea>
     );
   }
 }
