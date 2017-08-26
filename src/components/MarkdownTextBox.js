@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../stylesheets/MarkdownTextBox.css';
+import '../stylesheets/App.css';
 
 class MarkdownTextBox extends Component {
   constructor(props) {

@@ -1,11 +1,23 @@
-.App {
-  text-align: center;
-}
-
-.App-header {
+.header {
   background-color: #222;
+  color: white;
   font-size: 50px;
   height: 150px;
   padding: 20px;
-  color: white;
-}
+  text-align: center; }
+
+.box {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  min-height: 500px;
+  max-width: 40%;
+  margin: 2%;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  width: 40%; }
+
+p {
+  margin: 0; }
+
+/*# sourceMappingURL=App.css.map */

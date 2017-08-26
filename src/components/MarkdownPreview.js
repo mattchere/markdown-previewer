@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../stylesheets/MarkdownTextBox.css';
+import '../stylesheets/App.css';
 import renderHTML from 'react-render-html';
 
 class MarkdownPreview extends Component {
